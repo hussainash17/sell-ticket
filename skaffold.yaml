@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: kanababa1723/auth
+    - image: kanaba1723/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -16,7 +16,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: kanababa1723/client
+    - image: kanaba1723/client
       context: client
       docker:
         dockerfile: Dockerfile
@@ -24,7 +24,7 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
-    - image: kanababa1723/tickets
+    - image: kanaba1723/tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
